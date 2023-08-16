@@ -8,3 +8,11 @@ def format_data(data_list):
             else:
                 print(f"- {formatted_key}: {value}")
         print("---\n") # Separator
+
+
+
+def format_with_bullets(data_list):
+    for i, entry in enumerate(data_list, 1):
+        print(f"• Data {i}:")
+        for key, value in entry.items():
+            print(f"    - {key.capitalize()}: {value}")
